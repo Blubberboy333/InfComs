@@ -1,5 +1,5 @@
 Name: InfComs
-Main: /DuncanA/InfComs/InfComs.php
+Main: DuncanA\InfComs\InfComs.php
 Aurthor: DuncanA
 Version: 1.0
 API: 1.12.0
