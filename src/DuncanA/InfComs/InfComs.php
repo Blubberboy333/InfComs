@@ -28,12 +28,12 @@ class InfComs extends PluginBase{
          if($sender instanceof Player){
             if($sender->hasPermission("infcoms.command.quit")){
                $player->kick();
+            }else{
+               $sender->sendMessage("You don't have permission to do that!");
+            }
          }else{
-            $sender->sendMessage("You don't have permission to do that!");
+            $sender->sendMessage(TextFormat::RED . "Please run that command in-game");
          }
-      }else{
-         $sender->sendMessage(TextFormat::RED . "Please run that command in-game");
-      }
    }elseif(strtolower($command->getName()) === "inv"){
       //I'm not sure what to put here...
    }
